@@ -1,0 +1,195 @@
+---
+// Imports Cascading Style Sheets.
+import '../css/styles.css';
+
+// Adds view transistion to and between each page.
+import { ViewTransitions } from "astro:transitions";
+
+// Sets the company name.
+let companyname = 'The Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <ViewTransitions />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+    <body>
+
+        <!-- Navigation bar at the top of every page..-->
+        <header class="mb-1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light bg-light">
+                        <a class="navbar-brand" href="/">
+                            <img src="/images/logo.png" width="54" height="62.8" class="d-inline-block align-middle"
+                                alt="Fox Run Logo">
+                        </a>
+                    </nav>
+
+                    <!-- Responsive button that activates when in mobile view. -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <!-- First section in the header/naviation bar. -->
+                            <li class="nav-item">
+                                <li><a class="nav-link" href="https://foreupsoftware.com/index.php/booking/22289/10326#teetimes">Book A Tee Time</a></li>
+                            </li>
+
+                            <!-- Second section in the header/naviation bar. -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Golf Course
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/course-rates">Course Rates</a></li>
+                                    <li><a class="dropdown-item" href="/memberships">Memberships</a></li>
+                                    <li><a class="dropdown-item" href="/course-overview">Course Overview</a></li>
+                                    <li><a class="dropdown-item" href="/etiquette">Etiquette</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Third section in the header/naviation bar. -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Events
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- <li><a class="dropdown-item" href="/member-member">Member-Member</a></li> -->
+                                    <!-- <li><a class="dropdown-item" href="/member-guest">Member-Guest</a></li> -->
+                                    <li><a class="dropdown-item" href="/tournament">Tournaments</a></li>
+                                    <li><a class="dropdown-item" href="/leagues">Leagues</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Fourth section in the header/naviation bar. -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Information
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/management-team">Management Team</a></li>
+                                    <li><a class="dropdown-item" href="/employment-opportunities">Employment Opportunities</a></li>
+                                    <li><a class="dropdown-item" href="/about">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <slot></slot>
+
+        <!-- Footer at the bottom of every page. -->
+        <footer>
+            <div class="bg-light">
+                <br>
+                <div class="container">
+                    <div class="row">
+
+                        <!-- First section in the footer. -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Golf:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="/course-rates" class="nav-link p-0 text-muted">Rates</a></li>
+                                <li class="nav-item mb-2"><a href="/memberships" class="nav-link p-0 text-muted">Membership</a></li>
+                                <li class="nav-item mb-2"><a href="/course-overview" class="nav-link p-0 text-muted">Course Overview</a></li>
+                                <li class="nav-item mb-2"><a href="/etiquette" class="nav-link p-0 text-muted">Etiquette</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Second section in the footer. -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Events:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <!-- <li class="nav-item mb-2"><a href="/member-member" class="nav-link p-0 text-muted">Member-Member</a></li> -->
+                                <!-- <li class="nav-item mb-2"><a href="/member-guest" class="nav-link p-0 text-muted">Member-Guest</a></li> -->
+                                <li class="nav-item mb-2"><a href="/tournament" class="nav-link p-0 text-muted">Tournaments</a></li>
+                                <li class="nav-item mb-2"><a href="/leagues" class="nav-link p-0 text-muted">Leagues</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Third section in the footer. -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Information:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="/management-team" class="nav-link p-0 text-muted">Management Team</a></li>
+                                <li class="nav-item mb-2"><a href="/employment-opportunities" class="nav-link p-0 text-muted">Employment Opportunities</a></li>
+                                <li class="nav-item mb-2"><a href="/about" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Fourth section in the footer. -->
+                        <div class="col-auto align-right">
+                            <h5>Contact:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">Learn more about {companyname}, click <a class="link" href="/about">HERE.</a></li>
+                                <li class="nav-item mb-2">Phone: (712) 366-4653</li>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social media and extra information. -->
+                <div class="container">
+                    <div class="row">
+                        <hr>
+                        <div class="d-flex flex-column flex-sm-row justify-content-between">
+                            <div class="col-sm-6">
+                                <p>Designed by Taylor Johnson</p>
+                                <p>{companyname}, Council Bluffs Iowa</p>
+                            </div>
+                            <ul class="list-unstyled d-flex">
+                                <li class="ms-3"><a href="">
+                                    <img src="/../images/socials/Instagram.png" width="24" height="24" alt="Instagram Icon"></a></li>
+                                <li class="ms-3"><a href="">
+                                    <img src="/../images/socials/Twitter.png" width="24" height="24" alt="X Icon"></a></li>
+                                <li class="ms-3"><a href="">
+                                        <img src="/images/socials/facebook.png" width="28" height="28" alt="Facebook Icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+    </body>
+</html>
+

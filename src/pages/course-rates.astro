@@ -1,0 +1,78 @@
+---
+// Import header and footer to each page making it easier for the user to navigate between each page.
+import Mainlayout from "../layouts/mainlayout.astro";
+// Imports Carousel from PhotoSlider. Allows users to look at pictures when entering each page.
+import PhotoSlider from "../components/photo-slider.astro";
+
+// Adds view transistion to and between each page.
+import { ViewTransitions } from "astro:transitions";
+
+// Sets the company name.
+let companyname = 'The Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Add Icon image to each page -->
+
+    <title>{companyname} - Rates</title>
+    <ViewTransitions />
+</head>
+<body>
+
+    <Mainlayout>
+
+        <PhotoSlider></PhotoSlider>
+
+        <div class="container">
+            <br>
+            <h1>Course Rates:</h1>
+
+            <hr>
+
+            <p>Tee times can be made up to 7 days in advance.</p>
+            <p>Range balls are inlcuded with the round of golf.</p>
+
+            <br>
+
+            <p><b>Monday - Thursday:</b></p>
+
+            <p>18 Holes Green Fee with cart: $50(effective March 1st 2024).</p>
+            <p>9 Hole Green Fee with cart: $35(effective March 1st 2024).</p>
+
+            <br>
+
+            <p><b>Friday - Sunday & Holidays:</b></p>
+
+            <p>18 Holes Green Fee with cart: $60(effective March 1st 2024).</p>
+            <p>9 Hole Green Fee with cart: $45(effective March 1st 2024).</p>
+
+            <br>
+
+            <p><b>*Senior (60+), Junior (17 & under), and Military* *Jr./Sr. and Military Rates available all day long, Monday - Thursday, excluding Weekends, Holidays & League Play*.</b></p>
+
+
+            <p>18 Holes Green Fee with cart: $40(effective March 1st 2024).</p>
+            <p>9 Hole Green Fee with cart: $30(effective March 1st 2024).</p>
+
+            <br>
+
+            <p><b>Rental Clubs:</b></p>
+
+            <p>$40 per set(Callaway Paradym).</p>
+
+            <br>
+
+            <p><b><i>*All Prices above include applicable taxes and 3% credit card fees.*</i></b></p>
+            <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
+        </div>
+
+    </Mainlayout>
+    
+  
+</body>
+</html>

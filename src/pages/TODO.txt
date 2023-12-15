@@ -1,0 +1,46 @@
+TODO list for Fox Run's Website:
+---------------------------------------------
+
+About.astro:
+ - Add Icon image to each page.
+ - Talk to Wyatt, Tony and Davis about what information wants to be put here.
+
+Course-overview.astro:
+ - Add Icon image to each page.
+ - Talk to Wyatt, Tony and Davis about what information wants to be put here.
+
+ - Vision: Using bootstrap rows and columns, use the rows and columns to divide each hole rotating 
+   the pictures from left -> right and right -> left or using a carousel to cycle through each hole
+   and their description of each hole.
+   https://www.platteviewgc.com/golf/tour
+
+Course-rates.astro:
+ - Add Icon image to each page.
+ - Talk to Wyatt, Tony and Davis about what information wants to be put here.
+
+Employment-opportunities.astro:
+ - Add Icon image to each page.
+ - Import and application form so customers/users can download/print out the application.
+
+Leagues.astro:
+ - Add Icon image to each page.
+ - Talk to Wyatt, Tony and Davis about what information wants to be put here.
+
+ - Vision: 
+
+Management-team.astro:
+ - Add Icon image to each page.
+ - Talk to Wyatt, Tony and Davis about what information wants to be put here.
+
+ - Vision: Using bootstrap 5 rows and columns to make three columns across each with a picture of the 
+   management team including Super, Director of Golf, GM, Assistant Pros. Underneath each picture, a little
+   description of each person and their role at Fox Run.
+   https://www.platteviewgc.com/contact/team
+
+Memberships.astro:
+ - Add Icon image to each page.
+ - Talk to Wyatt, Tony and Davis about what information wants to be put here.
+
+Tournament.astro:
+ - Add Icon image to each page.
+ - Talk to Wyatt, Tony and Davis about what information wants to be put here.

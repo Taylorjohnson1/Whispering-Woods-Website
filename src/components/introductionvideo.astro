@@ -1,0 +1,77 @@
+---
+// Sets the company name.
+let companyname = 'The Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px; 
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+}
+hr {
+    border-width: 2px;
+    color: white;
+}
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.video-bg {
+    width: 100%;
+    object-fit: cover; // use "cover" to avoid distortion
+    position: fixed;
+    position: fixed;
+    z-index: -1; 
+    filter: brightness(75%);
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.titleimg{
+    width: 54px;
+    height: 62.8px;
+    margin-bottom: 35px;
+}
+</style>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <h1>The  <img src="/images/whitelogo.png" class="titleimg">oods</h1>
+                <p>A premier 18-hole golf course in Council Bluffs, Iowa</p>
+                <br>
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-outline-light align-center">
+                        <a class="nav-link" href="https://foreupsoftware.com/index.php/booking/22289/10326#teetimes">Book A Tee Time</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <video playsinline autoplay loop muted class="video-bg">
+
+            <!-- TODO: Create a new introduction video.  -->
+            <source src="/videos/introvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+</body>
+</html>

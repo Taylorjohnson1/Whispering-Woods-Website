@@ -1,0 +1,58 @@
+---
+// Adds view transistion to and between each page.
+import { ViewTransitions } from "astro:transitions";
+
+// Sets the company name.
+let companyname = 'The Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <ViewTransitions />
+</head>
+
+<style>
+    .carousel>.carousel-inner>.carousel-item>img {
+        object-fit: cover;
+        filter: brightness(75%);
+        width: 100%;
+        height: 30vh;
+    }
+</style>
+
+<body>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Image 1 in Carousel. -->
+            <div class="carousel-item active">
+                <img src="/images/slider-images/sliderimage1.jpg" class="d-block w-100" alt="image1" />
+            </div>
+
+            <!-- Image 2 in Carousel. -->
+            <div class="carousel-item">
+                <img src="/images/slider-images/sliderimage2.jpg" class="d-block w-100" alt="image2" />
+            </div>
+
+            <!-- Image 3 in Carousel. -->
+            <div class="carousel-item">
+                <img src="/images/slider-images/sliderimage3.JPG" class="d-block w-100" alt="image3" />
+            </div>
+
+            <!-- Image 4 in Carousel. -->
+            <div class="carousel-item">
+                <img src="/images/slider-images/sliderimage4.JPG" class="d-block w-100" alt="image5" />
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

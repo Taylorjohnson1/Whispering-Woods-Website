@@ -1,0 +1,61 @@
+---
+// Import header and footer to each page making it easier for the user to navigate between each page.
+import Mainlayout from "../layouts/mainlayout.astro";
+// Imports Carousel from PhotoSlider. Allows users to look at pictures when entering each page.
+import PhotoSlider from "../components/photo-slider.astro";
+
+// Adds view transistion to and between each page.
+import { ViewTransitions } from "astro:transitions";
+
+// Sets the company name.
+let companyname = 'The Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{companyname} - Etiquette</title>
+    <ViewTransitions />
+</head>
+<body>
+
+    <Mainlayout>
+
+        <PhotoSlider></PhotoSlider>
+
+        <div class="container">
+
+            <br>
+
+            <h2><b>Golf Etiquette:</b></h2>
+
+            <hr>
+
+            <p>It is important to always wear appropriate golf attire when on the golf course. This helps 
+                maintain a professional and respectful atmosphere for all players. The golf staff will be 
+                present to assist you and ensure that your attire meets the required standards. If you 
+                are unsure about what qualifies as appropriate golf attire, feel free to contact the proshop 
+                with any questions you may have.</p>
+
+            <p>Listed below are some of the items not allowed and other policies that are enforced:</p>
+
+            <ul>
+                <li>Tank tops, tee shirts, or sleeveless shirts.</li>
+                <li>Golfers must wear soft spike golf shoes or tennis shoes.</li>
+                <li>No Five-some are allowed.</li>
+                <li>Twosomes and Threesomes that book tee times will be paired up with other twosomes or singles</li>
+                <li>All riders will be charged a cart fee.</li>
+                <li>No more than 2 people are allowed in the carts at all times.</li>
+            </ul>
+
+
+
+        </div>
+
+    </Mainlayout>
+    
+</body>
+</html>

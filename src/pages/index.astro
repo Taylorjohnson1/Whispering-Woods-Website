@@ -1,0 +1,36 @@
+---
+// Import header and footer to each page making it easier for the user to navigate between each page.
+import Mainlayout from "../layouts/mainlayout.astro";
+// Imports the introduction video in between the main layout.
+import IntroductionVideo from "../components/introductionvideo.astro";
+
+// Adds view transistion to and between each page.
+import { ViewTransitions } from "astro:transitions";
+
+// Sets the company name.
+let companyname = 'The Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+    <title>{companyname} - Home</title>
+
+    <ViewTransitions />
+</head>
+<body>
+
+    <Mainlayout>
+       
+        <!-- Imports introduction video inbetween the mainlayout. -->
+        <IntroductionVideo></IntroductionVideo>
+        
+    </Mainlayout>
+  
+</body>
+</html>

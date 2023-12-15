@@ -1,0 +1,84 @@
+---
+// Import header and footer to each page making it easier for the user to navigate between each page.
+import Mainlayout from "../layouts/mainlayout.astro";
+// Imports Carousel from PhotoSlider. Allows users to look at pictures when entering each page.
+import PhotoSlider from "../components/photo-slider.astro";
+
+// Adds view transistion to and between each page.
+import { ViewTransitions } from "astro:transitions";
+
+// Sets the company name.
+let companyname = 'The Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Add Icon image to each page -->
+
+    <title>{companyname} - Employment Opportunities</title>
+    <ViewTransitions />
+</head>
+<style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    button:hover {
+        background-color: darkslategray;
+    }
+</style>
+<body>
+
+    <Mainlayout>
+
+        <PhotoSlider></PhotoSlider>
+       
+        <div class="container">
+            <br>
+            <h2><b>Employment Opportunities - Join Our Team!</b></h2>
+            <hr>
+            <p>We think you would be a great fit for our team at {companyname}. {companyname} is an attractive 18-hole golf
+                course located in Council Bluffs, Iowa. Our facility offers various amenities and services for golfers of 
+                all skill levels. As spring approaches, we are preparing to open our doors and welcome golfers from the metro.
+                We take pride in our well-maintained course, modern equipment, and friendly staff who are committed to providing 
+                exceptional service. Besides the golf course, we also have other departments that operate during the spring, 
+                summer, and fall seasons, including our outside, restaurant, and pro shop staff. Each department plays a vital 
+                role in ensuring our guests have an unforgettable experience. We value teamwork, professionalism, and a passion 
+                for delivering excellent hospitality. Joining our team would not only provide you with a rewarding career opportunity 
+                but also a chance to be part of a vibrant and thriving golf community. We are excited about the upcoming season 
+                and look forward to the possibility of having you join us at {companyname}.</p>
+            <br>
+
+            <h4><b>{companyname} Perks:</b></h4>
+            <hr>
+            <ul>
+                <li>Fun Environment</li>
+                <li>Networking Opportunities</li>
+                <li>Free Golf</li>
+            </ul>
+            <br>
+
+            <h4><b>Apply to work with us!</b></h4>
+            <hr>
+            <p>If you are interested in working with us, we would highly appreciate it if you could take a moment to download the 
+                application form, carefully fill it out with accurate information, and then kindly drop it off inside the clubhouse 
+                at your earliest convenience. Your interest and effort in submitting the application will be greatly valued and 
+                considered in our selection process. Thank you for considering this opportunity to work with us!</p>
+            
+            <!-- TODO: Import and application form so customers/users can download/print out the application. -->
+            <button type="button" class="btn btn-outline-light bg-light align-center">
+                <a download href="">Download Application</a>
+            </button>
+            <br>
+            <br>
+            
+        </div>
+
+    </Mainlayout>
+  
+</body>
+</html>
