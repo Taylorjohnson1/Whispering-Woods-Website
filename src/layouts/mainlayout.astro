@@ -13,17 +13,22 @@ let companyname = 'The Woods';
 <html lang="en">
 
     <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <ViewTransitions />
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+        <!-- Imports Bootstrap 5 and Bootstrap Icons. -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+        
+        <ViewTransitions />
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     </head>
 
     <style>
@@ -41,8 +46,7 @@ let companyname = 'The Woods';
                 <div class="container-fluid">
                     <nav class="navbar navbar-light bg-light">
                         <a class="navbar-brand" href="/">
-                            <img src="/images/logo.png" width="54" height="62.8" class="d-inline-block align-middle"
-                                alt="Fox Run Logo">
+                            <img src="/images/logo.png" width="54" height="62.8" class="d-inline-block align-middle" alt="Logo">
                         </a>
                     </nav>
 
@@ -62,7 +66,7 @@ let companyname = 'The Woods';
 
                             <!-- Second section in the header/naviation bar. -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Golf Course
                                 </a>
@@ -76,7 +80,7 @@ let companyname = 'The Woods';
 
                             <!-- Third section in the header/naviation bar. -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Events
                                 </a>
@@ -90,7 +94,7 @@ let companyname = 'The Woods';
 
                             <!-- Fourth section in the header/naviation bar. -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Information
                                 </a>
@@ -106,6 +110,7 @@ let companyname = 'The Woods';
             </nav>
         </header>
         
+        <!-- Where all the main information is inserted when the MainLayout is called. -->
         <slot></slot>
 
         <!-- Footer at the bottom of every page. -->
@@ -169,26 +174,24 @@ let companyname = 'The Woods';
                         <hr>
                         <div class="d-flex flex-column flex-sm-row justify-content-between">
                             <div class="col-sm-6">
-                                <p>Designed by Taylor Johnson</p>
+                                <p>Designed by Taylor Johnson | Powered by <a href="https://www.foreupgolf.com/">foreUP</a></p>
                                 <p>{companyname}, Council Bluffs Iowa</p>
                             </div>
-                            <ul class="list-unstyled d-flex">
-                                <li class="ms-3"><a href="">
-                                    <img src="/../images/socials/Instagram.png" width="24" height="24" alt="Instagram Icon"></a></li>
-                                <li class="ms-3"><a href="">
-                                    <img src="/../images/socials/Twitter.png" width="24" height="24" alt="X Icon"></a></li>
-                                <li class="ms-3"><a href="">
-                                        <img src="/images/socials/facebook.png" width="28" height="28" alt="Facebook Icon"></a></li>
-                            </ul>
+
+                            <div class="d-flex flex-row bd-highlight">
+                                <div class="p-2 bd-highlight"><a href="google.com"><i class="bi bi-instagram" style="font-size: 25px;"></i></a></div>
+                                <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-twitter-x" style="font-size: 25px;"></i></a></div>
+                                <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-facebook" style="font-size: 25px;"></i></a></div>
+                              </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     </body>
 </html>

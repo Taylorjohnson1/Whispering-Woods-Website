@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.3.2",
     "astro": "^4.0.4",
     "astro-icon": "^0.8.1",
+    "bootstrap-icons": "^1.11.2",
     "typescript": "^5.2.2"
   }
 }
