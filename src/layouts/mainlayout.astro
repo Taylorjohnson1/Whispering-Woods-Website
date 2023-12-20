@@ -13,33 +13,35 @@ let companyname = 'The Woods';
 <html lang="en">
 
     <head>
+        <!-- Meta Tags -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Imports Google Fonts. -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
-        <!-- Imports Bootstrap 5 and Bootstrap Icons. -->
+        <!-- Imports Bootstrap 5. -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Imports Bootstrap 5 Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-        
+        <!-- Imports Astro ViewTransistions. -->
         <ViewTransitions />
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"
             integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     </head>
-
     <style>
         a {
             text-decoration: none;
             color: black;
         }
     </style>
-
     <body>
-
+        
         <!-- Navigation bar at the top of every page..-->
         <header class="mb-1">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -110,7 +112,7 @@ let companyname = 'The Woods';
             </nav>
         </header>
         
-        <!-- Where all the main information is inserted when the MainLayout is called. -->
+        <!-- Where all the main information is inserted when the MainLayout is called on other astro pages. -->
         <slot></slot>
 
         <!-- Footer at the bottom of every page. -->
@@ -187,6 +189,7 @@ let companyname = 'The Woods';
                         </div>
                     </div>
                 </div>
+                <br>
             </div>
         </footer>
         

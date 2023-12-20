@@ -1,8 +1,6 @@
 ---
 // Import header and footer to each page making it easier for the user to navigate between each page.
 import Mainlayout from "../layouts/mainlayout.astro";
-// Imports Carousel from PhotoSlider. Allows users to look at pictures when entering each page.
-import PhotoSlider from "../components/photo-slider.astro";
 // Imports google maps onto page so users/customers can see the location.
 import GoogleMap from "../components/google-map.astro";
 
@@ -15,49 +13,58 @@ let companyname = 'The Woods';
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Add Icon image to each page -->
+    <head>
+        <!-- Meta Tags. -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- TODO: Add Icon image to each page. -->
 
-    <title>{companyname} - About</title>
+        <title>{companyname} - About</title>
 
-    <!-- Icon image to each page -->
-    <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
-    
-    <ViewTransitions />
-</head>
-<body>
+        <!-- Icon image to each page -->
+        <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
 
-    <Mainlayout>
+        <ViewTransitions />
+    </head>
+    <body>
 
-        <GoogleMap></GoogleMap>
+        <Mainlayout>
 
-        <div class="container">
-            <br>
-            <h1>More Infomration on {companyname}!</h1>
-            <hr>
-            <p><b>Address:</b> 3001 Macineery Dr, Council Bluffs, IA 51501</p>
-            <p><b>Phone:</b> (712) 366-4653</p>
-            <br>
-            <p><b>Hours:</b></p>
-            <hr>
-            <p><b>Sunday:</b></p>
-            <p><b>Monday:</b></p>
-            <p><b>Tuesday:</b></p>
-            <p><b>Wednesday:</b></p>
-            <p><b>Thursday:</b></p>
-            <p><b>Friday:</b></p>
-            <p><b>Saturday:</b></p>
-            <br>
-            <p><b><i>* Hours may very between the months of October through April*</i></b></p>
+            <GoogleMap></GoogleMap>
 
-            <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
-        </div>
+            <div class="container">
+                <br>
 
-    </Mainlayout>
-    
-  
-</body>
+                <h1>More Information on {companyname}!</h1>
+
+                <hr>
+
+                <p><b>Address:</b> 3001 Macineery Dr, Council Bluffs, IA 51501</p>
+                <p><b>Phone:</b> (712) 366-4653</p>
+
+                <br>
+
+                <p><b>Hours:</b></p>
+
+                <hr>
+
+                <p><b>Sunday:</b></p>
+                <p><b>Monday:</b></p>
+                <p><b>Tuesday:</b></p>
+                <p><b>Wednesday:</b></p>
+                <p><b>Thursday:</b></p>
+                <p><b>Friday:</b></p>
+                <p><b>Saturday:</b></p>
+
+                <br>
+
+                <p><b><i>* Hours may very between the months of October through April*</i></b></p>
+
+                <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
+            </div>
+
+        </Mainlayout>
+        
+    </body>
 </html>
