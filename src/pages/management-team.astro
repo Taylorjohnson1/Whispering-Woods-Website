@@ -8,7 +8,7 @@ import PhotoSlider from "../components/photo-slider.astro";
 import { ViewTransitions } from "astro:transitions";
 
 // Sets the company name.
-let companyname = "The Woods";
+let companyname = 'Whispering Woods';
 ---
 
 <!doctype html>
@@ -22,7 +22,7 @@ let companyname = "The Woods";
     <title>{companyname} - Management Team</title>
 
     <!-- Icon image to each page -->
-    <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+    <link rel="icon" type="image/x-icon" href="/images/CroppedLogo2Black.png">
 
     <ViewTransitions />
 </head>
@@ -63,7 +63,7 @@ let companyname = "The Woods";
                     <div class="card">
                         <img src="/images/slider-images/sliderimage1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Ben Hall</h5>
+                            <h5 class="card-title">Ben Starkel</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Golf Course Superintendent</h6>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This card has even longer content than the first to show that equal
@@ -83,8 +83,14 @@ let companyname = "The Woods";
                         <div class="card-body">
                             <h5 class="card-title">Taylor Johnson</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Assistant Golf Professional</h6>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Taylor Johnson is a proud native of Council Bluffs, Iowa. With a strong connection to the local community.
+                                Taylor is a familiar face here at {companyname}</p>
+                            <p>Notably, Taylor recently achieved a significant milestone by graduating from 
+                                Concordia University in Seward, Nebraska. Taylor's dedication and hard work paid off as he earned a degree in Information Technology, 
+                                equipping him with the necessary knowledge and skills to thrive in the ever-evolving tech industry.</p>
+                            <p>Looking ahead, Taylor has exciting plans to further develop their professional journey. In September of 2024, he will be embarking 
+                                on an exciting new chapter by joining the PGA Apprenticeship program. This program will provide Taylor with invaluable opportunities 
+                                to enhance his abilities and pursue his passion for golf.</p>
                         </div>
                     </div>
 
