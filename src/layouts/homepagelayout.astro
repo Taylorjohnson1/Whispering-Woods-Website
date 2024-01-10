@@ -1,7 +1,4 @@
 ---
-// Imports Cascading Style Sheets.
-import '../css/styles.css';
-
 // Adds view transistion to and between each page.
 import { ViewTransitions } from "astro:transitions";
 
@@ -53,7 +50,25 @@ let companyname = 'Whispering Woods';
         .custom-toggler.navbar-toggler {
             border-color: rgb(255,255,255);
         } 
-
+        .icon-flex, .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon-wrapper {
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid black;
+            margin: 5px;
+            font-size: 5rem;
+            width: 40px;
+            height: 40px;
+            font-size: 25px;
+            background-color: black;
+        }
+        .icon-wrapper .bi {
+            color: white;
+        }
     </style>
     <body>
         
@@ -87,7 +102,7 @@ let companyname = 'Whispering Woods';
                                     aria-expanded="false">
                                     Golf Course
                                 </a>
-                                <ul class="dropdown-menu bg-transparent">
+                                <ul class="dropdown-menu bg-transparent ">
                                     <li><a class="dropdown-item text-white bg-transparent" href="/course-rates">Course Rates</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/memberships">Memberships</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/course-overview">Course Overview</a></li>
@@ -102,8 +117,8 @@ let companyname = 'Whispering Woods';
                                     Events
                                 </a>
                                 <ul class="dropdown-menu bg-transparent">
-                                    <!-- <li><a class="dropdown-item" href="/member-member">Member-Member</a></li> -->
-                                    <!-- <li><a class="dropdown-item" href="/member-guest">Member-Guest</a></li> -->
+                                    <li><a class="dropdown-item text-white bg-transparent" href="/member-member">Member-Member</a></li>
+                                    <li><a class="dropdown-item text-white bg-transparent" href="/member-guest">Member-Guest</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/tournament">Tournaments</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/leagues">Leagues</a></li>
                                 </ul>
@@ -157,8 +172,8 @@ let companyname = 'Whispering Woods';
                             <h5>Events:</h5>
                             <hr>
                             <ul class="nav flex-column">
-                                <!-- <li class="nav-item mb-2"><a href="/member-member" class="nav-link p-0 text-muted">Member-Member</a></li> -->
-                                <!-- <li class="nav-item mb-2"><a href="/member-guest" class="nav-link p-0 text-muted">Member-Guest</a></li> -->
+                                <li class="nav-item mb-2"><a href="/member-member" class="nav-link p-0 text-muted">Member-Member</a></li>
+                                <li class="nav-item mb-2"><a href="/member-guest" class="nav-link p-0 text-muted">Member-Guest</a></li> 
                                 <li class="nav-item mb-2"><a href="/tournament" class="nav-link p-0 text-muted">Tournaments</a></li>
                                 <li class="nav-item mb-2"><a href="/leagues" class="nav-link p-0 text-muted">Leagues</a></li>
                             </ul>
@@ -199,10 +214,18 @@ let companyname = 'Whispering Woods';
                             </div>
 
                             <div class="d-flex flex-row bd-highlight">
-                                <div class="p-2 bd-highlight"><a href="google.com"><i class="bi bi-instagram" style="font-size: 25px;"></i></a></div>
-                                <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-twitter-x" style="font-size: 25px;"></i></a></div>
-                                <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-facebook" style="font-size: 25px;"></i></a></div>
-                              </div>
+                                <div class="icon-flex">
+                                    <div class="icon-wrapper">
+                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-instagram" style="font-size: 25px;"></i></a></div>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-twitter-x" style="font-size: 25px;"></i></a></div>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-facebook" style="font-size: 25px;"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
