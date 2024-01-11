@@ -69,6 +69,9 @@ let companyname = 'Whispering Woods';
         .icon-wrapper .bi {
             color: white;
         }
+        .dropdown-menu {
+            background: rgba(0,0,0, 0.5);
+        }
     </style>
     <body>
         
@@ -102,7 +105,7 @@ let companyname = 'Whispering Woods';
                                     aria-expanded="false">
                                     Golf Course
                                 </a>
-                                <ul class="dropdown-menu bg-transparent ">
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item text-white bg-transparent" href="/course-rates">Course Rates</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/memberships">Memberships</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/course-overview">Course Overview</a></li>
@@ -116,9 +119,7 @@ let companyname = 'Whispering Woods';
                                     aria-expanded="false">
                                     Events
                                 </a>
-                                <ul class="dropdown-menu bg-transparent">
-                                    <li><a class="dropdown-item text-white bg-transparent" href="/member-member">Member-Member</a></li>
-                                    <li><a class="dropdown-item text-white bg-transparent" href="/member-guest">Member-Guest</a></li>
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item text-white bg-transparent" href="/tournament">Tournaments</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/leagues">Leagues</a></li>
                                 </ul>
@@ -130,7 +131,7 @@ let companyname = 'Whispering Woods';
                                     aria-expanded="false">
                                     Information
                                 </a>
-                                <ul class="dropdown-menu bg-transparent">
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item text-white bg-transparent" href="/management-team">Management Team</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/employment-opportunities">Employment Opportunities</a></li>
                                     <li><a class="dropdown-item text-white bg-transparent" href="/about">About</a></li>
@@ -172,8 +173,6 @@ let companyname = 'Whispering Woods';
                             <h5>Events:</h5>
                             <hr>
                             <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="/member-member" class="nav-link p-0 text-muted">Member-Member</a></li>
-                                <li class="nav-item mb-2"><a href="/member-guest" class="nav-link p-0 text-muted">Member-Guest</a></li> 
                                 <li class="nav-item mb-2"><a href="/tournament" class="nav-link p-0 text-muted">Tournaments</a></li>
                                 <li class="nav-item mb-2"><a href="/leagues" class="nav-link p-0 text-muted">Leagues</a></li>
                             </ul>
