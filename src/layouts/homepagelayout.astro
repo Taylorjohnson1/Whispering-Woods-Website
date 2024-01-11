@@ -29,7 +29,7 @@ let companyname = 'Whispering Woods';
         <!-- Imports Astro ViewTransistions. -->
         <ViewTransitions />
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
     </head>
     <style>
         a {
@@ -72,7 +72,30 @@ let companyname = 'Whispering Woods';
         .dropdown-menu {
             background: rgba(0,0,0, 0.5);
         }
+        .collapsing {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: height .35s ease;
+                -o-transition: height .35s ease;
+                    transition: height .35s ease;
+            }
     </style>
+    <script>
+
+        // Dropdown Animation.
+        document.addEventListener('astro:page-load', () => {
+            $('.dropdown').on('show.bs.dropdown', function() {
+                // @ts-ignore
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+            });
+            // Add slideUp animation to Bootstrap dropdown when collapsing.
+            $('.dropdown').on('hide.bs.dropdown', function() {
+                // @ts-ignore
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+            });
+        })
+    </script>
     <body>
         
         <!-- Navigation bar at the top of every page..-->
