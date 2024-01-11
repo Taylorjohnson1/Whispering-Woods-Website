@@ -61,20 +61,6 @@ let companyname = 'Whispering Woods';
             color: white;
         }
     </style>
-    <script lang="js">
-        //
-        document.addEventListener('astro:page-load', () => {
-            $('.dropdown').on('show.bs.dropdown', function() {
-                // @ts-ignore
-                $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-            });
-            // Add slideUp animation to Bootstrap dropdown when collapsing.
-            $('.dropdown').on('hide.bs.dropdown', function() {
-                // @ts-ignore
-                $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-            });
-        })
-    </script>
     <body>
         <!-- Navigation bar at the top of every page..-->
         <header class="mb-1">
@@ -82,7 +68,7 @@ let companyname = 'Whispering Woods';
                 <div class="container-fluid">
                     <nav class="navbar navbar-light bg-light">
                         <a class="navbar-brand" href="/">
-                            <img src="/images/CroppedLogo2Black.png" width="42.5" height="52.5" class="d-inline-block align-middle" alt="Logo">
+                            <img src="/images/logos/CroppedLogo2Black.png" width="42.5" height="52.5" class="d-inline-block align-middle" alt="Logo">
                         </a>
                     </nav>
 
