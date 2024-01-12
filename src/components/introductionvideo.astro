@@ -39,7 +39,7 @@
     }
     </style>
     
-    <script>
+    <script defer>
         document.addEventListener('astro:page-load', () => {
             const video = document.querySelector('#introduction-video');
             if (!video) return;
@@ -49,7 +49,7 @@
             console.log(video);
         });
     </script>
-    
+
     <body>
         <!-- Where first impressions are made. -->
         <div class="hero">
