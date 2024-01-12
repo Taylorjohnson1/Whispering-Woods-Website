@@ -4,9 +4,6 @@ import Mainlayout from "../layouts/mainlayout.astro";
 // Imports google maps onto page so users/customers can see the location.
 import GoogleMap from "../components/google-map.astro";
 
-// Adds view transistion to and between each page.
-import { ViewTransitions } from "astro:transitions";
-
 // Sets the company name.
 let companyname = 'Whispering Woods';
 ---
@@ -24,9 +21,6 @@ let companyname = 'Whispering Woods';
 
         <!-- Icon image to each page -->
         <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
-
-        <!-- Adds view transistion to and between each page. -->
-        <ViewTransitions />
     </head>
     <body>
 
