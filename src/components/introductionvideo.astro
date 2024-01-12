@@ -39,8 +39,18 @@
     }
     </style>
     
-    <body>
+    <script defer>
 
+        // Sometimes with View Transistions, components don't always load in.
+        // Adding the astro:page-load fixes this problem.
+        document.addEventListener('astro:page-load', () => {
+            const iv = document.querySelector('#introduction-video');
+            if(!iv) return
+            console.log("load");
+        })
+    </script>
+    </script>
+    <body>
         <!-- Where first impressions are made. -->
         <div class="hero">
             <div class="container">
@@ -66,7 +76,8 @@
                 </div>
             </div>
 
-            <video playsinline autoplay loop muted class="video-bg">
+            <!-- Video that's playing on the front page. -->
+            <video playsinline autoplay loop muted class="video-bg" id="introduction-video">
                 <source src="/videos/introvideo.mp4" type="video/mp4">
             </video>
 

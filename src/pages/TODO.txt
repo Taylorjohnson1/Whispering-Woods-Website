@@ -26,8 +26,6 @@ Leagues.astro:
  - Add Icon image to each page.
  - Talk to Wyatt, Tony and Davis about what information wants to be put here.
 
- - Vision: 
-
 Management-team.astro:
  - Add Icon image to each page.
  - Talk to Wyatt, Tony and Davis about what information wants to be put here.

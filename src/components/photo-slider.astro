@@ -1,11 +1,5 @@
----
-// Adds view transistion to and between each page.
-import { ViewTransitions } from "astro:transitions";
----
-
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <!-- Meta Tags.  -->
         <meta charset="UTF-8" />
@@ -22,6 +16,8 @@ import { ViewTransitions } from "astro:transitions";
     </style>
     <script defer>
 
+        // Sometimes with View Transistions, components don't always load in.
+        // Adding the astro:page-load fixes this problem.
         document.addEventListener('astro:page-load', () => {
             const el = document.querySelector('#carouselExampleSlidesOnly');
             if(!el) return

@@ -4,6 +4,9 @@ import HomePageLayout from "../layouts/homepagelayout.astro";
 // Imports the introduction video in between the main layout.
 import IntroductionVideo from "../components/introductionvideo.astro";
 
+// Adds view transistion to and between each page.
+import { ViewTransitions } from "astro:transitions";
+
 // Sets the company name.
 let companyname = 'Whispering Woods';
 ---
@@ -11,15 +14,19 @@ let companyname = 'Whispering Woods';
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta Tags. -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Title in the tab bar. -->
         <title>{companyname} - Home</title>
 
         <!-- Icon image to each page -->
         <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
 
+        <!-- Adds view transistion to and between each page. -->
+        <ViewTransitions />
     </head>
     <body>
 

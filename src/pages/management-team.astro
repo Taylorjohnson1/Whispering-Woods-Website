@@ -13,115 +13,118 @@ let companyname = 'Whispering Woods';
 
 <!doctype html>
 <html lang="en">
+    <head>
+        <!-- Meta Tags. -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title in the tab bar. -->
+        <title>{companyname} - Management Team</title>
 
-    <title>{companyname} - Management Team</title>
+        <!-- Icon image to each page -->
+        <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
 
-    <!-- Icon image to each page -->
-    <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
+        <!-- Adds view transistion to and between each page. -->
+        <ViewTransitions />
+    </head>
 
-    <ViewTransitions />
-</head>
+    <body>
+        <Mainlayout>
+            
+            <PhotoSlider />
 
-<body>
-    <Mainlayout>
-        <PhotoSlider />
+            <div class="container">
+                <br />
+                <h1>Management Team:</h1>
 
-        <div class="container">
-            <br />
-            <h1>Management Team:</h1>
+                <hr />
 
-            <hr />
+                <div class="row">
+                    <div class="card-group">
 
-            <div class="row">
-                <div class="card-group">
-
-                    <div class="card">
-                        <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Tony Driscoll</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Director of Golf</h6>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Davis Garner</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">General Manager</h6>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ben Starkel</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Golf Course Superintendent</h6>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="row">
-                <div class="card-group">
-
-                    <div class="card">
-                        <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Taylor Johnson</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Assistant Golf Professional</h6>
-                            <p class="card-text">Taylor Johnson is a proud native of Council Bluffs, Iowa. With a strong connection to the local community.
-                                Taylor is a familiar face here at {companyname}</p>
-                            <p>Notably, Taylor recently achieved a significant milestone by graduating from 
-                                Concordia University in Seward, Nebraska. Taylor's dedication and hard work paid off as he earned a degree in Information Technology, 
-                                equipping him with the necessary knowledge and skills to thrive in the ever-evolving tech industry.</p>
-                            <p>Looking ahead, Taylor has exciting plans to further develop their professional journey. In September of 2024, he will be embarking 
-                                on an exciting new chapter by joining the PGA Apprenticeship program. This program will provide Taylor with invaluable opportunities 
-                                to enhance his abilities and pursue his passion for golf.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Jordan Greenwood</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Assistant Golf Professional</h6>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
+                        <div class="card">
+                            <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tony Driscoll</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Director of Golf</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
                             </div>
-                    </div>
+                        </div>
 
-                    <div class="card">
-                        <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Alyssa Jeffery</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Food and Beverage Manager</h6>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
+                        <div class="card">
+                            <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Davis Garner</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">General Manager</h6>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ben Starkel</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Golf Course Superintendent</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="card-group">
+
+                        <div class="card">
+                            <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Taylor Johnson</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Assistant Golf Professional</h6>
+                                <p class="card-text">Taylor Johnson is a proud native of Council Bluffs, Iowa. With a strong connection to the local community.
+                                    Taylor is a familiar face here at {companyname}</p>
+                                <p>Notably, Taylor recently achieved a significant milestone by graduating from 
+                                    Concordia University in Seward, Nebraska. Taylor's dedication and hard work paid off as he earned a degree in Information Technology, 
+                                    equipping him with the necessary knowledge and skills to thrive in the ever-evolving tech industry.</p>
+                                <p>Looking ahead, Taylor has exciting plans to further develop their professional journey. In September of 2024, he will be embarking 
+                                    on an exciting new chapter by joining the PGA Apprenticeship program. This program will provide Taylor with invaluable opportunities 
+                                    to enhance his abilities and pursue his passion for golf.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Jordan Greenwood</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Assistant Golf Professional</h6>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Alyssa Jeffery</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Food and Beverage Manager</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+
             </div>
+        </Mainlayout>
 
-            <br>
-
-        </div>
-    </Mainlayout>
-</body>
-
+    </body>
 </html>
