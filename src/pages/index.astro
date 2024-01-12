@@ -5,7 +5,7 @@ import HomePageLayout from "../layouts/homepagelayout.astro";
 import IntroductionVideo from "../components/introductionvideo.astro";
 
 // Adds view transistion to and between each page.
-// import { ViewTransitions } from "astro:transitions";
+import { ViewTransitions } from "astro:transitions";
 
 // Sets the company name.
 let companyname = 'Whispering Woods';
@@ -26,7 +26,7 @@ let companyname = 'Whispering Woods';
         <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
 
         <!-- Adds view transistion to and between each page. -->
-        <!-- <ViewTransitions /> -->
+        <ViewTransitions />
     </head>
     <body>
 
