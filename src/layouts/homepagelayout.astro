@@ -64,6 +64,21 @@ let companyname = 'Whispering Woods';
             background: rgba(0,0,0, 0.5);
         }
         
+        /* Add custom styles for the arrow animation */
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            transition: transform 0.4s ease-out;
+        }
+        .show.dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
     </style>
     <script>
         // Add slideDown animation to Bootstrap dropdown when expanding.
@@ -211,7 +226,7 @@ let companyname = 'Whispering Woods';
                         <div class="d-flex flex-column flex-sm-row justify-content-between">
                             <div class="col-sm-6">
                                 <p>Designed by Taylor Johnson | Powered by <a href="https://www.foreupgolf.com/">foreUP</a></p>
-                                <p>{companyname}, Council Bluffs Iowa</p>
+                                <p>{companyname} | Council Bluffs, Iowa</p>
                             </div>
 
                             <div class="d-flex flex-row bd-highlight">

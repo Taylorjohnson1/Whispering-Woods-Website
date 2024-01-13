@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Your JavaScript or jQuery code -->
+<script>
+    $(document).ready(function() {
+      $('#toggleBtn').click(function() {
+        $('.navbar-toggler-icon').toggleClass('rotated');
+      });
+    });
+  </script>
+
+  <style>
+
+    /* Add this CSS to your stylesheet */
+@keyframes rotateArrow {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+/* Apply the animation class to the dropdown-toggle when toggled */
+.navbar-toggler-icon.rotated {
+  animation: rotateArrow 0.5s forwards; /* Adjust the duration as needed */
+}
+
+  </style>
+<body>
+    <!-- Include jQuery in your HTML -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Your navigation bar HTML -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <!-- Your navigation links go here -->
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- First section in the header/naviation bar. -->
+        <li class="nav-item">
+            <li><a class="nav-link text-white" href="https://foreupsoftware.com/index.php/booking/22289/10326#teetimes">Book a Tee Time</a></li>
+        </li>
+
+        <!-- Second section in the header/naviation bar. -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="/" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Golf Course
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-white bg-transparent" href="/course-rates">Course Rates</a></li>
+                <li><a class="dropdown-item text-white bg-transparent" href="/memberships">Memberships</a></li>
+                <li><a class="dropdown-item text-white bg-transparent" href="/course-overview">Course Overview</a></li>
+                <li><a class="dropdown-item text-white bg-transparent" href="/etiquette">Etiquette</a></li>
+            </ul>
+        </li>
+
+        <!-- Third section in the header/naviation bar. -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="/" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Events
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-white bg-transparent" href="/tournament">Tournaments</a></li>
+                <li><a class="dropdown-item text-white bg-transparent" href="/leagues">Leagues</a></li>
+            </ul>
+        </li>
+
+        <!-- Fourth section in the header/naviation bar. -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="/" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Information
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-white bg-transparent" href="/management-team">Management Team</a></li>
+                <li><a class="dropdown-item text-white bg-transparent" href="/employment-opportunities">Employment Opportunities</a></li>
+                <li><a class="dropdown-item text-white bg-transparent" href="/about">About</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr class="headerhr">
+
+</div>
+  </div>
+</nav>
+
+
+
+</body>
+</html>
