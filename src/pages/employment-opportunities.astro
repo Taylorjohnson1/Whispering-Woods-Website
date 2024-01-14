@@ -1,8 +1,6 @@
 ---
 // Import header and footer to each page making it easier for the user to navigate between each page.
-import Mainlayout from "../layouts/mainlayout.astro";
-// Imports Carousel from PhotoSlider. Allows users to look at pictures when entering each page.
-import PhotoSlider from "../components/photo-slider.astro";
+import Mainlayout from "../layouts/secondary-header.astro";
 
 // Sets the company name.
 let companyname = 'Whispering Woods';
@@ -30,9 +28,8 @@ let companyname = 'Whispering Woods';
     </style>
     <body>
 
+        <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
         <Mainlayout>
-
-            <PhotoSlider></PhotoSlider>
         
             <div class="container">
 

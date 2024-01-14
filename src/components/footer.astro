@@ -1,0 +1,131 @@
+---
+// Sets the company name.
+let companyname = 'Whispering Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags. -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        a {
+                text-decoration: none;
+                color: black;
+            }
+            hr {
+                border-width: 2px;
+            }
+            .icon-flex, .icon-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .icon-wrapper {
+                border-radius: 50%;
+                overflow: hidden;
+                border: 1px solid black;
+                margin: 5px;
+                font-size: 5rem;
+                width: 40px;
+                height: 40px;
+                font-size: 25px;
+                background-color: black;
+            }
+            .icon-wrapper .bi {
+                color: white;
+            }
+    </style>
+
+    <body>
+        <!-- Footer at the bottom of every page. -->
+        <footer>
+            <div class="bg-light">
+                <br>
+                <div class="container">
+                    <div class="row">
+
+                        <!-- First section in the footer. -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Golf:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="/course-rates" class="nav-link p-0 text-muted">Rates</a></li>
+                                <li class="nav-item mb-2"><a href="/memberships" class="nav-link p-0 text-muted">Membership</a></li>
+                                <li class="nav-item mb-2"><a href="/course-overview" class="nav-link p-0 text-muted">Course Overview</a></li>
+                                <li class="nav-item mb-2"><a href="/etiquette" class="nav-link p-0 text-muted">Etiquette</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Second section in the footer. -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Events:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="/tournament" class="nav-link p-0 text-muted">Tournaments</a></li>
+                                <li class="nav-item mb-2"><a href="/leagues" class="nav-link p-0 text-muted">Leagues</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Third section in the footer. -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Information:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="/management-team" class="nav-link p-0 text-muted">Management Team</a></li>
+                                <li class="nav-item mb-2"><a href="/employment-opportunities" class="nav-link p-0 text-muted">Employment Opportunities</a></li>
+                                <li class="nav-item mb-2"><a href="/about" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Fourth section in the footer. -->
+                        <div class="col-auto align-right">
+                            <h5>Contact:</h5>
+                            <hr>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">Learn more about {companyname}, click <a class="link" href="/about">HERE.</a></li>
+                                <li class="nav-item mb-2">Phone: (712) 366-4653</li>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social media and extra information. -->
+                <div class="container">
+                    <div class="row">
+                        <hr>
+                        <div class="d-flex flex-column flex-sm-row justify-content-between">
+                            <div class="col-sm-6">
+                                <p>Designed by Taylor Johnson | Powered by <a href="https://www.foreupgolf.com/">foreUP</a></p>
+                                <p>{companyname} | Council Bluffs, Iowa</p>
+                            </div>
+
+                            <div class="d-flex flex-row bd-highlight">
+                                <div class="icon-flex">
+                                    <div class="icon-wrapper">
+                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-instagram" style="font-size: 25px;"></i></a></div>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-twitter-x" style="font-size: 25px;"></i></a></div>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-facebook" style="font-size: 25px;"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+            </div>
+        </footer>
+    </body>
+</html>

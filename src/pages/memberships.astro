@@ -1,8 +1,6 @@
 ---
 // Import header and footer to each page making it easier for the user to navigate between each page.
-import Mainlayout from "../layouts/mainlayout.astro";
-// Imports Carousel from PhotoSlider. Allows users to look at pictures when entering each page.
-import PhotoSlider from "../components/photo-slider.astro";
+import Mainlayout from "../layouts/secondary-header.astro";
 
 // Sets the company name.
 let companyname = 'Whispering Woods';
@@ -10,71 +8,70 @@ let companyname = 'Whispering Woods';
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Meta Tags. -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Title in the tab bar. -->
-    <title>{companyname} - Memberships</title>
+    <head>
+        <!-- Meta Tags. -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Title in the tab bar. -->
+        <title>{companyname} - Memberships</title>
 
-    <!-- Icon image to each page -->
-    <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
-</head>
-<body>
+        <!-- Icon image to each page -->
+        <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
+    </head>
+    <body>
 
-    <Mainlayout>
+        <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
+        <Mainlayout>
 
-        <PhotoSlider></PhotoSlider>
+            <div class="container">
+                <br>
+                <h1>Membership Information:</h1>
 
-        <div class="container">
-            <br>
-            <h1>Membership Information:</h1>
+                <hr>
 
-            <hr>
+                <p><b>Full Membership:</b> $1,800.00</p>
 
-            <p><b>Full Membership:</b> $1,800.00</p>
+                <p>Includes: ... </p>
 
-            <p>Includes: ... </p>
+                <br>
 
-            <br>
+                <p><b>Partial Membership:</b> $1,400.00</p>
 
-            <p><b>Partial Membership:</b> $1,400.00</p>
+                <p>Includes: ... </p>
 
-            <p>Includes: ... </p>
+                <br>
 
-            <br>
+                <p><b>Walking Membership</b> $800.00</p>
 
-            <p><b>Walking Membership</b> $800.00</p>
+                <p>Includes: ... </p>
 
-            <p>Includes: ... </p>
+                <br>
 
-            <br>
+                <p><b>Junior Membership:</b> $600.00</p>
 
-            <p><b>Junior Membership:</b> $600.00</p>
+                <p>Includes: ... </p>
 
-            <p>Includes: ... </p>
+                <br>
 
-            <br>
+                <p><b>Trail Fee:</b> $500.00</p>
 
-            <p><b>Trail Fee:</b> $500.00</p>
+                <p>Includes: ... </p>
 
-            <p>Includes: ... </p>
+                <br>
 
-            <br>
+                <p><b>Facility Fee:</b> $250.00</p>
 
-            <p><b>Facility Fee:</b> $250.00</p>
+                <p>Includes: ... </p>
 
-            <p>Includes: ... </p>
+                <br>
 
-            <br>
+                
+                <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
+            </div>
 
-            
-            <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
-        </div>
-
-    </Mainlayout>
-    
-</body>
+        </Mainlayout>
+        
+    </body>
 </html>

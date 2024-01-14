@@ -1,6 +1,6 @@
 ---
 // Import header and footer to each page making it easier for the user to navigate between each page.
-import HomePageLayout from "../layouts/homepagelayout.astro";
+import HomePageLayout from "../layouts/homepage-header.astro";
 // Imports the introduction video in between the main layout.
 import IntroductionVideo from "../components/introductionvideo.astro";
 
@@ -25,6 +25,7 @@ let companyname = 'Whispering Woods';
     </head>
     <body>
 
+        <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
         <HomePageLayout>
         
             <!-- Imports introduction video inbetween the mainlayout. -->
@@ -32,7 +33,5 @@ let companyname = 'Whispering Woods';
             
         </HomePageLayout>
 
-
-    
     </body>
 </html>

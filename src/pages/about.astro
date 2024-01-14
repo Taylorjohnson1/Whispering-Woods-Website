@@ -1,8 +1,6 @@
 ---
 // Import header and footer to each page making it easier for the user to navigate between each page.
-import Mainlayout from "../layouts/mainlayout.astro";
-// Imports google maps onto page so users/customers can see the location.
-import GoogleMap from "../components/google-map.astro";
+import Mainlayout from "../layouts/secondary-header.astro";
 
 // Sets the company name.
 let companyname = 'Whispering Woods';
@@ -24,9 +22,8 @@ let companyname = 'Whispering Woods';
     </head>
     <body>
 
+        <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
         <Mainlayout>
-
-            <GoogleMap></GoogleMap>
 
             <div class="container">
                 <br>
@@ -60,6 +57,6 @@ let companyname = 'Whispering Woods';
             </div>
 
         </Mainlayout>
-        
+
     </body>
 </html>

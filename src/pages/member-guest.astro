@@ -1,8 +1,6 @@
 ---
 // Import header and footer to each page making it easier for the user to navigate between each page.
-import Mainlayout from "../layouts/mainlayout.astro";
-// Imports Carousel from PhotoSlider. Allows users to look at pictures when entering each page.
-import PhotoSlider from "../components/photo-slider.astro";
+import Mainlayout from "../layouts/secondary-header.astro";
 
 // Sets the company name.
 let companyname = 'Whispering Woods';
@@ -10,36 +8,34 @@ let companyname = 'Whispering Woods';
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Meta Tags. -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <!-- Meta Tags. -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title in the tab bar. -->
-    <title>{companyname} - Member-Guest</title>
+        <!-- Title in the tab bar. -->
+        <title>{companyname} - Member-Guest</title>
 
-    <!-- Icon image to each page -->
-    <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
-</head>
-<body>
+        <!-- Icon image to each page -->
+        <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
+    </head>
+    <body>
 
-    <Mainlayout>
+        <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
+        <Mainlayout>
 
-        <PhotoSlider></PhotoSlider>
+            <div class="container">
+                <br>
+                <h1>Member-Guest Tournament:</h1>
 
-        <div class="container">
-            <br>
-            <h1>Member-Guest Tournament:</h1>
+                <hr>
 
-            <hr>
+                <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
+                <p>More information on Member-Guest tournament comming soon.</p>
+            </div>
 
-            <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
-            <p>More information on Member-Guest tournament comming soon.</p>
-        </div>
-
-    </Mainlayout>
-    
-  
-</body>
+        </Mainlayout>
+        
+    </body>
 </html>
