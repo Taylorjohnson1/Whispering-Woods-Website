@@ -1,0 +1,71 @@
+---
+// Import header and footer to each page making it easier for the user to navigate between each page.
+import Mainlayout from "../layouts/secondary-header.astro";
+
+// Sets the company name.
+let companyname = 'Whispering Woods';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags. -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Title in the tab bar. -->
+        <title>{companyname} - Memberships</title>
+
+        <!-- Icon image to each page -->
+        <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
+    </head>
+    <body>
+
+        <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
+        <Mainlayout>
+
+            <div class="container">
+                <br>
+                <h2><b>Become a Member:</b></h2>
+                <hr>
+                <p>Joining Whispering Wood Golf Club has many advantages for both golf lovers and beginners. 
+                    As a member, you get to play on a high-quality golf course known for its great design. 
+                    It's a fun challenge for players at any skill level.</p>
+                <p>But Whispering Wood Golf Club isn't just about golf. It's a social hub where members can 
+                    meet new people and network. The club hosts events and tournaments that are not only fun 
+                    but also a way to make friends in a relaxed setting.</p>
+                <p>Members also have access to top-notch facilities. These include the clubhouse, pro shop, 
+                    and practice areas. The club always keeps these places in great shape for members to 
+                    enjoy.</p>
+                <p>There are also options for professional training. If you're a seasoned player wanting to 
+                    get better, or a newbie wanting to learn, the club has trainers to help you. This focus 
+                    on helping members improve is another thing that makes the club special.</p>
+                <p>Joining Whispering Wood Golf Club isn't just about playing golf. It's about joining a 
+                    community of people who love the sport and enjoy the lifestyle that comes with it.</p>
+
+                <br>
+
+                <h2><b>Membership Pricing:</b></h2>
+                <hr>
+                <p><b>Full Membership:</b> $1,800.00</p>
+
+                <p><b>Partial Membership:</b> $1,400.00</p>
+
+                <p><b>Walking Membership</b> $800.00</p>
+
+                <p><b>Junior Membership:</b> $600.00</p>
+
+                <p><b>Trail Fee:</b> $500.00</p>
+
+                <p><b>Facility Fee:</b> $250.00</p>
+
+                <br>
+                
+                <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
+            </div>
+
+        </Mainlayout>
+        
+    </body>
+</html>
