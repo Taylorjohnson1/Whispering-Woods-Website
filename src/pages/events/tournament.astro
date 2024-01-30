@@ -1,6 +1,6 @@
 ---
 // Import header and footer to each page making it easier for the user to navigate between each page.
-import Mainlayout from "../layouts/secondary-header.astro";
+import Mainlayout from "../../layouts/secondary-header.astro";
 
 // Sets the company name.
 let companyname = 'Whispering Woods';
@@ -13,21 +13,14 @@ let companyname = 'Whispering Woods';
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <!-- Title in the tab bar. -->
-        <title>{companyname} - About</title>
+        <title>{companyname} - Tournaments</title>
 
         <!-- Icon image to each page -->
         <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png">
+        
     </head>
-
-    <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
-
     <body>
 
         <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
@@ -35,33 +28,12 @@ let companyname = 'Whispering Woods';
 
             <div class="container">
                 <br>
-
-                <h2><b>Direction & Hours:</b></h2>
-
-                <hr>
-
-                <p><b>Address:</b> 3001 Macineery Dr, Council Bluffs, IA 51501</p>
-                <p><b>Phone:</b> <a href="tel:7123664653"><u>(712) 366-4653</a></u></p>
-
-                <br>
-
-                <h2><b>Hours:</b></h2>
+                <h1>Tournament Information:</h1>
 
                 <hr>
-
-                <p><b>Sunday:</b></p>
-                <p><b>Monday:</b></p>
-                <p><b>Tuesday:</b></p>
-                <p><b>Wednesday:</b></p>
-                <p><b>Thursday:</b></p>
-                <p><b>Friday:</b></p>
-                <p><b>Saturday:</b></p>
-
-                <br>
-
-                <p><b><i>* Hours may very between the months of October through April*</i></b></p>
 
                 <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
+                <p>More information on Tournaments comming soon.</p>
             </div>
 
         </Mainlayout>
