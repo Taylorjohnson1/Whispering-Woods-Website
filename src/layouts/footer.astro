@@ -1,4 +1,7 @@
 ---
+//Imports the Social Media Icons from the components.
+import Socialmediaicons from "../components/socialmediaicons.astro";
+
 // Sets the company name.
 let companyname = 'Whispering Woods';
 ---
@@ -23,25 +26,6 @@ let companyname = 'Whispering Woods';
             hr {
                 border-width: 2px;
             }
-            .icon-flex, .icon-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .icon-wrapper {
-                border-radius: 50%;
-                overflow: hidden;
-                margin: 5px;
-                font-size: 5rem;
-                width: 40px;
-                height: 40px;
-                font-size: 25px;
-                background-color: black;
-            }
-            .icon-wrapper .bi {
-                color: white;
-            }
-
             .fa {
                 padding: 20px;
                 font-size: 30px;
@@ -61,84 +45,18 @@ let companyname = 'Whispering Woods';
         <footer>
             <div class="bg-light">
                 <br>
-                <div class="container">
-                    <div class="row">
-
-                        <!-- Section(1) of the footer at the bottom that displays navigation links to the user. -->
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Memberships:</h5>
-                            <hr>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="/membership/become-a-member" class="nav-link p-0 text-muted">Become a Member</a></li>
-                                <li class="nav-item mb-2"><a href="/membership/member-benefits" class="nav-link p-0 text-muted">Member Benefits</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Section(2) of the footer at the bottom that displays navigation links to the user. -->
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Golf Course:</h5>
-                            <hr>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="/golf-course/course-rates" class="nav-link p-0 text-muted">Rates</a></li>
-                                <li class="nav-item mb-2"><a href="/golf-course/course-overview" class="nav-link p-0 text-muted">Course Overview</a></li>
-                                <li class="nav-item mb-2"><a href="/golf-course/etiquette" class="nav-link p-0 text-muted">Etiquette</a></li>
-                                <li class="nav-item mb-2"><a href="/golf-course/management-team" class="nav-link p-0 text-muted">Management Team</a></li>
-                            </ul>
-                        </div>
-            
-                        <!-- Section(3) of the footer at the bottom that displays navigation links to the user. -->
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Events:</h5>
-                            <hr>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="/events/tournament" class="nav-link p-0 text-muted">Tournaments</a></li>
-                                <li class="nav-item mb-2"><a href="/events/leagues" class="nav-link p-0 text-muted">Leagues</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Section(4) of the footer at the bottom that displays navigation links to the user. -->
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Information:</h5>
-                            <hr>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="/information/employment-opportunities" class="nav-link p-0 text-muted">Employment Opportunities</a></li>
-                                <li class="nav-item mb-2"><a href="/information/direction-hours" class="nav-link p-0 text-muted">Directions & Hours</a></li>
-                            </ul>
-                        </div>
-            
-                    </div>
-                </div>
-
+                
                 <!-- Social media and extra information. -->
-                <div class="container">
+                <div class="container align-item-center">
                     <div class="row">
                         <hr>
                         <div class="d-flex flex-column flex-sm-row justify-content-between">
-                            <div class="col-sm-6">
+                            <div class="col">
                                 <p>Designed by Taylor Johnson | Powered by <a href="https://www.foreupgolf.com/"><u>foreUP</u>.</a></p>
                                 <p>{companyname} | Council Bluffs, Iowa.</p>
                             </div>
 
-                            <!-- Social Media Icons. -->
-                            <div class="d-flex flex-row bd-highlight">
-                                <div class="icon-flex">
-
-                                    <!-- Instagram. -->
-                                    <div class="icon-wrapper">
-                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-instagram" style="font-size: 25px;"></i></a></div>
-                                    </div>
-
-                                    <!-- Twitter(X). -->
-                                    <div class="icon-wrapper">
-                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-twitter-x" style="font-size: 25px;"></i></a></div>
-                                    </div>
-
-                                    <!-- Facebook. -->
-                                    <div class="icon-wrapper">
-                                        <div class="p-2 bd-highlight"><a href="/"><i class="bi bi-facebook" style="font-size: 25px;"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Socialmediaicons></Socialmediaicons>
 
                         </div>
                     </div>

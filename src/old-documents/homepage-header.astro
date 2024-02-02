@@ -1,6 +1,6 @@
 ---
 // Imports the footer layout to the bottom of each page.
-import MainFooter from "./footer.astro";
+import MainFooter from "../layouts/footer.astro";
 //Imports the introduction video the the home-layout.
 import Introductionvideo from "../components/introductionvideo.astro";
 
@@ -145,7 +145,6 @@ let companyname = 'Whispering Woods';
             margin-right: 5px;
         }
 
-
     </style>
 
     <script>
@@ -250,8 +249,6 @@ let companyname = 'Whispering Woods';
 
         </Introductionvideo>
         
-        <!-- Where all the main information is inserted when the MainLayout is called on other astro pages. -->
-        <!-- More information on slots can be found at: https://docs.astro.build/en/core-concepts/astro-components/#slots -->
         <slot></slot>
 
         <!-- Imports the footer component to the bottom of each page. -->
