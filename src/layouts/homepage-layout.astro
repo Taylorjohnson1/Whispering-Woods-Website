@@ -40,7 +40,7 @@ import Socialmediaicons from "../components/socialmediaicons.astro";
         font-family: 'Roboto', sans-serif;
     }
 
-    /* Add custom styles for the arrow animation. */
+    /* Add custom styles for the arrow animation in the header. */
     .dropdown-toggle::after {
         display: inline-block;
         margin-left: 0.255em;
@@ -99,6 +99,11 @@ import Socialmediaicons from "../components/socialmediaicons.astro";
             color: white;
         }
     }   
+
+    /* Changes the width of the offcanvas in Mobile View. */
+    .offcanvas {
+        --bs-offcanvas-width: 325px;
+    }
     
 </style>
 
