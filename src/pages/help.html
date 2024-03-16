@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags. -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .hero {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            padding-bottom: 100px;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        .hero-body {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        h1 {
+            letter-spacing: 5px;
+        }
+
+        hr {
+            border-width: 2px;
+            color: white;
+        }
+
+        .video-bg {
+            width: 100%;
+            object-fit: cover;
+            /* use "cover" to avoid distortion */
+            position: absolute;
+            z-index: -1;
+            filter: brightness(50%);
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .button-text,
+        .button-icon,
+        .button-space {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 5px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Where first impressions are made. -->
+    <div class="hero">
+        <slot />
+        <div class="hero-body container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <br />
+                    <br />
+                    <br />
+                </div>
+
+                <!-- Text in the center of the page. -->
+                <img src="/images/logos/WordLogo.png" alt="Logo" />
+
+                <div class="col-sm-12">
+                    <hr />
+                </div>
+
+                <!-- Button that links user to the foreUP tee-sheet to signup for tee-times. -->
+                <div class="col-12">
+                    <a class="nav-link" href="https://foreupsoftware.com/index.php/booking/22289/10326#teetimes">
+                        <button type="button" class="button btn btn-outline-light align-center">
+                            <span class="button-icon"><i class="bi bi-calendar"></i></span>
+                            <span class="button-space">|</span>
+                            <span class="button-text">Book a Tee Time</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video that's playing on the front page. -->
+        <video playsinline autoplay loop muted class="video-bg" id="introduction-video">
+            <source src="/videos/introvideo.mp4" type="video/mp4" />
+        </video>
+    </div>
+</body>
+
+</html>
