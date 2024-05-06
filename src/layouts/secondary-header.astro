@@ -63,6 +63,29 @@ import PhotoSlider from "../components/photo-slider.astro";
     .offcanvas {
         --bs-offcanvas-width: 325px;
     }
+
+    .contact {
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact-icons {
+        font-size: 20px; 
+        padding-right: 5px; 
+    }
+
+    .contact-bar {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+    }
+
+    @media (max-width: 991.98px) {
+        .contact-bar {
+            display: none;
+        }
+    }
+    
 </style>
 
 <script>
@@ -180,6 +203,22 @@ import PhotoSlider from "../components/photo-slider.astro";
                     </ul>
 
                     <hr />
+
+                    <nav class="navbar bg-transparent text-light">
+
+                        <a href="tel:7123664653" class="contact">
+                            <i class="bi bi-telephone contact-icons"></i>
+                            (712) 366-4653
+                        </a>
+
+                        <div class=contact-bar>|</div>
+                            
+                        <a href="mailto:proshop@thewoodsgc.com" class="contact">
+                            <i class="bi bi-envelope contact-icons"></i>
+                            proshop@thewoodsgc.com                                
+                        </a>
+
+                    </nav>
 
                     <div class="d-lg-none">
                         <Socialmediaicons />
