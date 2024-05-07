@@ -25,11 +25,52 @@ let companyname = 'Whispering Woods';
     </head>
 
     <style>
-        .profilepicture {
-            width: 75%;
-            height: auto;
+        
+
+        /* Styling for scrolling animation. */
+        .hidden {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 1s;
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0)
         }
     </style>
+
+    <script>
+        // Script added: May 6th 2024:
+        // Found: https://www.youtube.com/watch?v=T33NN_pPeNI
+
+        // Scrolling animation.
+        const observer = new IntersectionObserver((entries) => {
+
+            // Can observe multiple entries all at the same time.
+            // Because of this, you do for each to grab each entry.
+            entries.forEach((entry) => {
+                console.log(entry)
+
+                // Checks to see if the entry is within the viewport.
+                if (entry.isIntersecting) {
+
+                    // Will make the class visible.
+                    entry.target.classList.add('show');
+                } else {
+
+                    // Will make the class not-visible.
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        // Grabs all of the elements within the document that have the class '.hidden'.
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 
     <body>
 
@@ -38,6 +79,7 @@ let companyname = 'Whispering Woods';
 
             <div class="container">
                 <br />
+
                 <h1>Management Team:</h1>
 
                 <hr />
@@ -45,7 +87,7 @@ let companyname = 'Whispering Woods';
                 <div class="row">
                     <div class="card-group">
 
-                        <div class="card">
+                        <div class="card hidden">
                             <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Tony Driscoll</h5>
@@ -55,7 +97,7 @@ let companyname = 'Whispering Woods';
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hidden">
                             <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Davis Garner</h5>
@@ -65,7 +107,7 @@ let companyname = 'Whispering Woods';
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hidden">
                             <img src="/images/management-team/noprofilepicture.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Ben Starkel</h5>
@@ -77,29 +119,29 @@ let companyname = 'Whispering Woods';
                         </div>
                     </div>
                 </div>
-
+                    
                 <br>
 
                 <div class="row">
                     <div class="card-group">
 
-                        <div class="card">
+                        <div class="card hidden">
                             <img src="/images/management-team/taylorjohnsonprofile.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Taylor Johnson</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Assistant Golf Professional</h6>
                                 <p class="card-text">Taylor Johnson is a proud native of Council Bluffs, Iowa. With a strong connection to the local community.
-                                    Taylor is a familiar face here at {companyname}</p>
+                                    Taylor is a familiar face here at {companyname}.</p>
                                 <p>Notably, Taylor recently achieved a significant milestone by graduating from 
                                     Concordia University in Seward, Nebraska. Taylor's dedication and hard work paid off as he earned a degree in Information Technology, 
                                     equipping him with the necessary knowledge and skills to thrive in the ever-evolving tech industry.</p>
-                                <p>Looking ahead, Taylor has exciting plans to further develop his professional journey. In September of 2024, he will be embarking 
+                                <p>Looking ahead, Taylor has exciting plans to further develop his professional journey. In the near future, he will be embarking 
                                     on an exciting new chapter by joining the PGA Apprenticeship program. This program will provide Taylor with invaluable opportunities 
                                     to enhance his abilities and pursue his passion for golf.</p>
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hidden">
                             <img src="/images/management-team/jordangreenwoodprofile.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Jordan Greenwood</h5>
