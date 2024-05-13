@@ -3,42 +3,901 @@
 import Mainlayout from "../../layouts/secondary-header.astro";
 
 // Sets the company name.
-let companyname = 'Whispering Woods';
+let companyname = "Whispering Woods";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <!-- Meta Tags. -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Title in the tab bar. -->
         <title>{companyname} - Course Overview</title>
 
         <!-- Icon image to each page -->
-        <link rel="icon" 
-            type="image/x-icon" 
+        <link
+            rel="icon"
+            type="image/x-icon"
             href="/images/logos/CroppedLogo2Black.png"
         />
     </head>
     <body>
-
         <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
         <Mainlayout>
-
             <div class="container">
+                <br />
+                <h2><b>Course Overview:</b></h2>
+
+                <hr />
+
+                <!-- Hole 1 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 1:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 5</b><br />Green: 538<br />White: 520<br/>Gold: 445<br />Red: 445</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators1" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <br>
-                <h1>Course Overview:</h1>
 
-                <hr>
+                <!-- Hole 2 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 2:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 358<br />White: 337<br/>Gold: 337<br />Red: 288</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators2" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- TODO: Talk to Wyatt, Tony and Davis about what information wants to be put here. -->
-                <p>A course overview is comming soon.</p>
+                <br>
+
+                <!-- Hole 3 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 3:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 5</b><br />Green: 491<br />White: 466<br/>Gold: 466<br />Red: 360</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators3" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 4 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 4:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 3</b><br />Green: 177<br />White: 165<br/>Gold: 111<br />Red: 111</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators4" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 5 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 5:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 349<br />White: 327<br/>Gold: 327<br />Red: 257</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators5" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 6 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 6:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 3</b><br />Green: 180<br />White: 160<br/>Gold: 140<br />Red: 120</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators6" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 7 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 7:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 365<br />White: 344<br/>Gold: 344<br />Red: 285</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators7" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- Hole 8 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 8:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 3</b><br />Green: 142<br />White: 135<br/>Gold: 135<br />Red: 123</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators8" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 9 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 9:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 417<br />White: 365<br/>Gold: 306<br />Red: 306</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators9" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 10 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 10:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 394<br />White: 372<br/>Gold: 372<br />Red: 313</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators10" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators10" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators10" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators10" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators10" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 11 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 11:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 5</b><br />Green: 515<br />White: 493<br/>Gold: 493<br />Red: 391</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators11" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 12 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 12:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 3</b><br />Green: 158<br />White: 145<br/>Gold: 145<br />Red: 138</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators12" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators12" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators12" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators12" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators12" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators12" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 13 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 13:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 331<br />White: 326<br/>Gold: 326<br />Red: 305</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators13" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators13" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators13" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators13" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators13" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators13" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 14 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 14:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 378<br />White: 338<br/>Gold: 338<br />Red: 322</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators14" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 15 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 15:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 5</b><br />Green: 518<br />White: 478<br/>Gold: 423<br />Red: 300</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators15" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 16 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 16:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 410<br />White: 377<br/>Gold: 370<br />Red: 347</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators16" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators16" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators16" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators16" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators16" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators16" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 17 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 17:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 3</b><br />Green: 116<br />White: 109<br/>Gold: 100<br />Red: 90</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators17" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Hole 18 Information. -->
+                <div class="container">
+                    <!-- Hole Number. -->
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Hole 18:</b></h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p><b>Par: 4</b><br />Green: 430<br />White: 370<br/>Gold: 344<br />Red: 344</p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos eaque voluptatum animi harum. Facilis amet iure numquam quo aspernatur, vel, doloremque rem delectus aliquam in, harum tenetur? Ut, delectus?</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Images for Hole. -->
+                            <div id="carouselExampleIndicators18" class="carousel slide">
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators18" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators18" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators18" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="/images/courseoverview/hole15overview.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators18" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators18" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                
             </div>
-
         </Mainlayout>
-        
     </body>
 </html>
