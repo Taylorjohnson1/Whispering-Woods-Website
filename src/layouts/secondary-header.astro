@@ -12,238 +12,223 @@ import { ViewTransitions } from 'astro:transitions';
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Imports Bootstrap 5. -->
-    <!-- More information on importing Bootstrap 5 to page can be found at: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <!-- Imports Bootstrap 5 Icons -->
-    <!-- More information on importing Bootstrap 5 Icons to the webpage can be found at: https://icons.getbootstrap.com/-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+        <!-- Imports Bootstrap 5. -->
+        <!-- More information on importing Bootstrap 5 to page can be found at: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <!-- Imports Bootstrap 5 Icons -->
+        <!-- More information on importing Bootstrap 5 Icons to the webpage can be found at: https://icons.getbootstrap.com/-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
 
-    <!-- Imports Roboto Font from Google Fonts into the page. -->
-    <!-- More information on Google Fonts can be found at: https://fonts.google.com/. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <!-- Imports Roboto Font from Google Fonts into the page. -->
+        <!-- More information on Google Fonts can be found at: https://fonts.google.com/. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-    <!-- Imports JQuery into project. -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-</head>
+        <!-- Imports JQuery into project. -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
 
-<style>
-    * {
-        font-family: "Roboto", sans-serif;
-    }
-
-    /* Add custom styles for the arrow animation. */
-    .dropdown-toggle::after {
-        display: inline-block;
-        margin-left: 0.255em;
-        vertical-align: 0.255em;
-        content: "";
-        border-top: 0.3em solid;
-        border-right: 0.3em solid transparent;
-        border-bottom: 0;
-        border-left: 0.3em solid transparent;
-        transition: transform 0.4s ease-out;
-    }
-
-    .show.dropdown-toggle::after {
-        transform: rotate(180deg);
-    }
-
-    /* Changes the width of the offcanvas in Mobile View. */
-    .offcanvas {
-        --bs-offcanvas-width: 325px;
-    }
-
-    .contact {
-        text-decoration: none;
-        color: black;
-    }
-
-    .contact-icons {
-        font-size: 20px; 
-        padding-right: 5px; 
-    }
-
-    .contact-bar {
-        padding-left: 10px;
-        padding-right: 10px;
-        color: black;
-    }
-
-    @media (max-width: 991.98px) {
-        .contact-bar {
-            display: none;
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
         }
-    }
 
-    .socials {
+        /* Add custom styles for the arrow animation. */
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            transition: transform 0.4s ease-out;
+        }
 
-    }
-    
-</style>
+        .show.dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
 
-<script>
-    // Add slideDown animation to Bootstrap dropdown when expanding.
-    jQuery(".dropdown").on("show.bs.dropdown", function () {
-        jQuery(this)
-            .find(".dropdown-menu")
-            .first()
-            .stop(true, true)
-            .slideDown();
-    });
+        /* Changes the width of the offcanvas in Mobile View. */
+        .offcanvas {
+            --bs-offcanvas-width: 375px;
+        }
 
-    // Add slideUp animation to Bootstrap dropdown when collapsing.
-    jQuery(".dropdown").on("hide.bs.dropdown", function () {
-        jQuery(this)
-            .find(".dropdown-menu")
-            .first()
-            .stop(true, true)
-            .slideUp();
-    });
-</script>
+        .contact {
+            text-decoration: none;
+            color: black;
+        }
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
-        <div class="container-fluid">
-            <a class="navbar-brand logo" href="/">
-                <img src="/images/logos/CroppedLogo2Black.png" width="42.5" height="52.5"
-                    class="d-inline-block align-middle" alt="Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-                aria-controls="offcanvasNavbar2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
-                aria-labelledby="offcanvasNavbar2Label">
-                <div class="offcanvas-header">
-                    <img src="/images/logos/WordLogoBlack.png" width="252.9" height="32.2" alt="Logo" />
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav flex-grow-1 pe-3">
-                        <!-- First section in the header/naviation bar. -->
-                        <li class="nav-item">
-                        <li>
-                            <a class="nav-link text-black"
-                                href="https://foreupsoftware.com/index.php/booking/22289/10326#teetimes">Tee Times</a>
-                        </li>
-                        </li>
+        .contact-icons {
+            font-size: 20px; 
+            padding-right: 5px; 
+        }
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-black" href="/" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Membership
+        .contact-bar {
+            padding-left: 10px;
+            padding-right: 10px;
+            color: black;
+        }
+
+        @media (max-width: 991.98px) {
+            .contact-bar {
+                display: none;
+            }
+        }
+
+        .socials {
+
+        }
+        
+    </style>
+
+    <script>
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        jQuery(".dropdown").on("show.bs.dropdown", function () {
+            jQuery(this)
+                .find(".dropdown-menu")
+                .first()
+                .stop(true, true)
+                .slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        jQuery(".dropdown").on("hide.bs.dropdown", function () {
+            jQuery(this)
+                .find(".dropdown-menu")
+                .first()
+                .stop(true, true)
+                .slideUp();
+        });
+    </script>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+
+                <!-- Clickable company logo that can be click on to go back to the index page. -->
+                <a class="navbar-brand logo" href="/">
+                    <img src="/images/logos/CroppedLogo2Black.png" width="42.5" height="52.5"
+                        class="d-inline-block align-middle" alt="Logo" />
+                </a>
+
+                <!-- Navigation for mobile view. Using the hamburger icon and offcanvas with bootstrap. -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                    aria-controls="offcanvasNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- More information can be found here for offcanvas: -->
+                <!-- https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <img src="/images/logos/WordLogoBlack.png" width="252.9" height="32.2" alt="Logo" />
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav flex-grow-1 pe-3">
+                            <!-- First section in the header/naviation bar. -->
+                            <li class="nav-item">
+                                <li>
+                                    <a class="nav-link text-black"
+                                        href="https://foreupsoftware.com/index.php/booking/22289/10326#teetimes">Tee Times</a>
+                                </li>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-black" href="/" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item bg-transparent" href="/membership/become-a-member">Become a Member</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Second section in the header/naviation bar. -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-black" href="/" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Golf Course</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item bg-transparent" href="/golf-course/course-rates">Course Rates</a></li>
+                                    <li><a class="dropdown-item bg-transparent" href="/golf-course/etiquette">Etiquette</a></li>
+                                    <!-- <li><a class="dropdown-item bg-transparent" href="/golf-course/management-team">Management Team</a></li> -->
+                                </ul>
+                            </li>
+
+                            <!-- Third section in the header/naviation bar. -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-black" href="/" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Events</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item bg-transparent" href="/events/2024-junior-camp">2024 Junior Golf Camp</a></li>
+                                    <li><a class="dropdown-item bg-transparent" href="/events/sail-on-fly-high">Sail On & Fly High</a></li>
+                                    <li><a class="dropdown-item bg-transparent" href="/events/TNTJDRF">TnT/JDRF</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Fourth section in the header/naviation bar. -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-black" href="/" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Information</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item bg-transparent" href="/information/employment-opportunities">Employment Opportunities</a></li>
+                                    <li><a class="dropdown-item bg-transparent" href="/information/direction-hours">Directions & Hours</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <hr />
+
+                        <!-- Contact icons on the right hand side of the header. -->
+                        <nav class="navbar bg-transparent text-light">
+
+                            <!-- Phone icon with current phone number. -->
+                            <!-- User is able to click on icon/phone number to call the course. -->
+                            <a href="tel:7123664653" class="contact">
+                                <i class="bi bi-telephone contact-icons"></i>
+                                (712) 366-4653
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item bg-transparent" href="/membership/become-a-member">Become a
-                                        Member</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item bg-transparent" href="/membership/member-benefits">Member
-                                        Benefits</a>
-                                </li>
-                            </ul>
-                        </li>
 
-                        <!-- Second section in the header/naviation bar. -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-black" href="/" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Golf Course
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item bg-transparent" href="/golf-course/course-rates">Course
-                                        Rates</a>
-                                </li>
-                                <!-- <li><a class="dropdown-item text-black" href="/golf-course/course-overview">Course Overview</a></li> -->
-                                <li>
-                                    <a class="dropdown-item bg-transparent" href="/golf-course/etiquette">Etiquette</a>
-                                </li>
-                                <!-- <li><a class="dropdown-item text-black" href="/golf-course/management-team">Management Team</a></li> -->
-                            </ul>
-                        </li>
-
-                        <!-- Third section in the header/naviation bar. -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-black" href="/" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Events
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item bg-transparent" href="/events/2024-junior-camp">2024 Junior Golf Camp</a></li>
-                                <li><a class="dropdown-item bg-transparent" href="/events/sail-on-fly-high">Sail On & Fly High</a></li>
-                                <li><a class="dropdown-item bg-transparent" href="/events/TNTJDRF">TnT/JDRF</a></li>
-                                <!-- <li><a class="dropdown-item text-black" href="/events/leagues">Leagues</a></li> -->
-                            </ul>
-                        </li>
-
-                        <!-- Fourth section in the header/naviation bar. -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-black" href="/" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Information
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item bg-transparent"
-                                        href="/information/employment-opportunities">Employment Opportunities</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item bg-transparent" href="/information/direction-hours">Directions &
-                                        Hours</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <hr />
-
-                    <nav class="navbar bg-transparent text-light">
-
-                        <a href="tel:7123664653" class="contact">
-                            <i class="bi bi-telephone contact-icons"></i>
-                            (712) 366-4653
-                        </a>
-
-                        <div class=contact-bar>|</div>
+                            <div class=contact-bar>|</div>
                             
-                        <a href="mailto:proshop@thewoodsgc.com" class="contact">
-                            <i class="bi bi-envelope contact-icons"></i>
-                            proshop@thewoodsgc.com                                
-                        </a>
+                            <!-- Mail icon with current email address. -->
+                            <!-- User is able to click on the icon/email address to contact the course. -->
+                            <a href="mailto:proshop@thewoodsgc.com" class="contact">
+                                <i class="bi bi-envelope contact-icons"></i>
+                                proshop@thewoodsgc.com                                
+                            </a>
 
-                    </nav>
+                        </nav>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <PhotoSlider />
+        <PhotoSlider />
 
-    <slot />
+        <!-- More information on the "slot" tag can be found here on the astro page. -->
+        <!-- https://docs.astro.build/en/basics/astro-components/#slots -->
+        <slot />
 
-    <!-- Imports the footer component to the bottom of each page. -->
-    <MainFooter />
+        <!-- Imports the footer component to the bottom of each page. -->
+        <MainFooter />
 
-    <ViewTransitions />
-
-    <!-- Imports JQuery into project. -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
+        <!-- Imports JQuery into project. -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
 
 </html>

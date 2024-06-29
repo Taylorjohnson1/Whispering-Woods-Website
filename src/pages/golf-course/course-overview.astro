@@ -5,6 +5,7 @@ import Mainlayout from "../../layouts/secondary-header.astro";
 // Sets the company name.
 let companyname = "Whispering Woods";
 
+// Import each hole from "../../components/course-overview/" 
 import Hole10 from "../../components/course-overview/hole10.astro";
 import Hole12 from "../../components/course-overview/hole12.astro";
 import Hole13 from "../../components/course-overview/hole13.astro";
@@ -33,9 +34,11 @@ import Hole16 from "../../components/course-overview/hole16.astro";
     </head>
     <body>
         <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
+        <!-- This is the secondary header which is used on all pages beside the index.astro page. -->
         <Mainlayout>
             <div class="container">
                 <br />
+                
                 <h2><b>Course Overview:</b></h2>
 
                 <hr />
@@ -58,8 +61,6 @@ import Hole16 from "../../components/course-overview/hole16.astro";
                 <!-- Hole 16 Information -->
                 <Hole16/>
 
-
-            
         </Mainlayout>
     </body>
 </html>

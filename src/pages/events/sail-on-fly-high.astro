@@ -18,14 +18,12 @@ let companyname = 'Whispering Woods';
         <title>{companyname} - Sail on and Fly High</title>
 
         <!-- Icon image to each page -->
-        <link rel="icon" 
-            type="image/x-icon" 
-            href="/images/logos/CroppedLogo2Black.png"
-        />
+        <link rel="icon" type="image/x-icon" href="/images/logos/CroppedLogo2Black.png" />
     </head>
     <body>
 
         <!-- Import header and footer to each page making it easier for the user to navigate between each page. -->
+        <!-- This is the secondary header which is used on all pages beside the index.astro page. -->
         <Mainlayout>
 
             <div class="container">
@@ -38,6 +36,7 @@ let companyname = 'Whispering Woods';
                 
                 <p>July 27th 2024<br>Click to register:</p>
 
+                <!-- Clickable link that allows users to go to a google sheet to sign up for something. -->
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5EEbkJvKngfekH1s1VvGC-h088gYD7l_3k6fQeLfVGyGE6g/viewform?usp=sharing">
                     <button type="button" class="button btn btn-outline-dark align-center">
                         <span class="button-icon"><i class="bi bi-calendar"></i></span>

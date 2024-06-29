@@ -8,39 +8,54 @@
     </head>
 
     <style>
-        .carousel>.carousel-inner>.carousel-item>img {
-            object-fit: cover;
-            filter: brightness(75%);
-            width: 100%;
-            height: 35vh;
+        /* When the maximum width of the screen is 575px, it will use these styles on the carousel. */
+        @media(max-width: 576px) {
+            .carousel>.carousel-inner>.carousel-item>img {
+                object-fit: cover;
+                filter: brightness(75%);
+                width: 100%;
+                height: 35vh;
+            }   
+        }
+        /* When the minimum width of the screen is 575px, it will use these styles on the carousel. */
+        @media(min-width: 575px) {
+            .carousel>.carousel-inner>.carousel-item>img {
+                object-fit: cover;
+                filter: brightness(75%);
+                width: 100%;
+                height: 45vh;
+            }   
         }
     </style>
 
     <body>
-
+        <!-- Carousel information can be found on this website: -->
+        <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
 
+                <!-- First image within the image slider. -->
                 <div class="carousel-item active">
-                    <img src="/images/slider-images/sliderimage1.jpeg" class="d-block w-100" alt="image4" />
+                    <img src="/images/slider-images/sliderimage1.jpeg" class="d-block w-100" alt="image1" />
                 </div>
 
+                <!-- Second image within the image slider. -->
                 <div class="carousel-item">
-                    <img src="/images/slider-images/sliderimage2.jpeg" class="d-block w-100" alt="image1" />
+                    <img src="/images/slider-images/sliderimage2.jpeg" class="d-block w-100" alt="image2" />
                 </div>
 
+                <!-- Third image within the image slider. -->
                 <div class="carousel-item">
-                    <img src="/images/slider-images/sliderimage3.jpg" class="d-block w-100" alt="image1" />
+                    <img src="/images/slider-images/sliderimage3.jpg" class="d-block w-100" alt="image3" />
                 </div>
 
+                <!-- Forth image within the image slider. -->
                 <div class="carousel-item">
                     <img src="/images/slider-images/sliderimage4.JPG" class="d-block w-100" alt="image4" />
                 </div>
 
             </div>
         </div>
-
-        
 
     </body>
 </html>
